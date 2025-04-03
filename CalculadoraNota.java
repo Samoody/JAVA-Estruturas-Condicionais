@@ -12,7 +12,7 @@ public class CalculadoraNota {
         Scanner scanner = new Scanner(System.in);
 
         // Solicitar o código do produto e a quantidade comprada
-        System.out.print("Digite o código do produto (1 a 30): ");
+        System.out.print("Digite o código do produto (1 a 40): ");
         int codigoProduto = scanner.nextInt();
 
         System.out.print("Digite a quantidade comprada: ");
@@ -31,8 +31,10 @@ public class CalculadoraNota {
             precoUnitario = 15.0;
         } else if (codigoProduto >= 21 && codigoProduto <= 30) {
             precoUnitario = 20.0;
+        } else if (codigoProduto >= 31 && codigoProduto <= 40) {
+            precoUnitario = 30.0;
         } else {
-            System.out.println("Código de produto inválido. Código deve ser entre 1 e 30.");
+            System.out.println("Código de produto inválido. Código deve ser entre 1 e 40.");
             return;
         }
 
