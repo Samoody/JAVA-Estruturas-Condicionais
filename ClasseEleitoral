@@ -1,0 +1,81 @@
+/**
+ * Autor: [SAMUEL KLEBER VIEIRQA SILVA]
+ * RA: [12123150]
+ * Data: [04/04/2025]
+ * 
+ * Programa para verificar a classe eleitoral com base na idade informada pelo usuário.
+ */
+
+import java.util.Scanner;
+
+public class ClasseEleitoral {
+    public static void main(String[] args) {
+        // Criando scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+        
+        // Cabeçalho
+        System.out.println("====================================");
+        System.out.println("      Verificador de Classe Eleitoral");
+        System.out.println("====================================\n");
+        
+        // Solicita idade ao usuário
+        System.out.print("Digite sua idade: ");
+        int idade = scanner.nextInt();
+        
+        // Verifica a classe eleitoral
+        if (idade < 16) {
+            System.out.println("Você é NÃO ELEITOR.");
+        } else if (idade >= 18 && idade <= 65) {
+            System.out.println("Você é ELEITOR OBRIGATÓRIO.");
+        } else {
+            System.out.println("Você é ELEITOR FACULTATIVO.");
+        }
+        
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+
+
+
+CÓDIGO EM C CONFORME PEDIDO ABAIXO 
+
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int idade;
+    
+    // 
+ * Autor: [SAMUEL KLEBER VIEIRQA SILVA]
+ * RA: [12123150]
+ * Data: [04/04/2025]
+ * 
+ * Programa para verificar a classe eleitoral com base na idade informada pelo usuário.
+ //
+
+    printf("====================================\n");
+    printf("      Verificador de Classe Eleitoral\n");
+    printf("====================================\n\n");
+    
+    // Entrada de dados
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+    
+    // Verificação da classe eleitoral
+    if (idade < 16) {
+        printf("Você é NÃO ELEITOR.\n");
+    } else if (idade >= 18 && idade <= 65) {
+        printf("Você é ELEITOR OBRIGATÓRIO.\n");
+    } else {
+        printf("Você é ELEITOR FACULTATIVO.\n");
+    }
+    
+    return 0;
+}
+
+
